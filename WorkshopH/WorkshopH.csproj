@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WorkshopH.Qn3</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,6 +48,9 @@
   <ItemGroup>
     <Compile Include="Qn1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Q2_improved.cs" />
+    <Compile Include="Qn2.cs" />
+    <Compile Include="Qn3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
