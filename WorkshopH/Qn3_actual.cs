@@ -2,16 +2,19 @@
 
 namespace WorkshopH
 {
-    class Qn3
+    class Qn3_actual
     {
-        // this program takes user input of a innteger number to generete a hexadeciaml
-
         static string[,] table = new string[,] { {"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"},
                                                  {"0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"} };
         static void Main()
         {
-            string input = GetInputNChk();
-            DeriveHex(input);
+            //string input = GetInputNChk();
+            for (int i = 0; i < 100; i++)
+            {
+                Console.Write(i.ToString("X")+" "); // variable.toString{"X") converts integer input to hexa.
+                DeriveHex(i);
+            }
+            
         }
 
         static string GetInputNChk()
@@ -31,9 +34,9 @@ namespace WorkshopH
         }
 
 
-        static void DeriveHex(string input)
+        static void DeriveHex(int input)
         {
-            int number = Convert.ToInt32(input);
+            int number = input; //lazy to replace all number variabe with input
             int count = 0;
             int temp = number;
 
