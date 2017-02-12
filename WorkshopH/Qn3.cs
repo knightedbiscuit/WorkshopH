@@ -11,7 +11,7 @@ namespace WorkshopH
         static void Main()
         {
             string input = GetInputNChk();
-            DeriveHex(input);
+            Console.WriteLine(DeriveHex(input));
         }
 
         static string GetInputNChk()
@@ -31,7 +31,7 @@ namespace WorkshopH
         }
 
 
-        static void DeriveHex(string input)
+        static string DeriveHex(string input)
         {
             int number = Convert.ToInt32(input);
             int count = 0;
@@ -71,13 +71,7 @@ namespace WorkshopH
 
             }
 
-            // print the hex array 
-            for (int m = 0; m < arraysize; m++)
-            {
-                Console.Write(hex[m]);
-            }
-            Console.WriteLine();
-
+            return string.Join("", hex);
         }
 
     }

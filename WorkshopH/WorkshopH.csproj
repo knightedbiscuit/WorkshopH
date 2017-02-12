@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>WorkshopH.Qn3_actual</StartupObject>
+    <StartupObject>WorkshopH.Qn4</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

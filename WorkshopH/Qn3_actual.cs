@@ -14,7 +14,6 @@ namespace WorkshopH
                 Console.Write(i.ToString("X")+" "); // variable.toString{"X") converts integer input to hexa.
                 DeriveHex(i);
             }
-            
         }
 
         static string GetInputNChk()
